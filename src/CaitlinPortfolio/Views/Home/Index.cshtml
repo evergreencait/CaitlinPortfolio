@@ -5,5 +5,19 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Caitlin Hines</h2>
-<h4>Junior Web Developer</h4>
+<div class="circle">
+
+</div>
+
+<div class="caitlin">
+    <h1>Caitlin Hines</h1>
+    <h3>Junior Web Developer</h3>
+    <div id="about">
+        About me
+    </div>
+</div>
+
+<body onload="initCanvas()">
+    <canvas height="1000" width="1920" id="backCanvas" class="background">Browser does not support Canvas</canvas>
+    <canvas height="1000" width="1920" id="myCanvas" class="midground">Browser does not support Canvas</canvas>
+</body>

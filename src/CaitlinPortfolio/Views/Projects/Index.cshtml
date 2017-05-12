@@ -5,19 +5,18 @@
 
 @model IEnumerable<CaitlinPortfolio.Models.Project>
 
-<h2>Featured Projects</h2>
+<h2>Projects</h2>
 <hr />
 <ol>
     @foreach (var project in Model)
     {
         <li>
             <ul>
-                <li>To: @Html.DisplayFor(modelItem => project.Name)</li>
-                <li>From: @Html.DisplayFor(modelItem => project.Url)</li>
-                <li>Body: @Html.DisplayFor(modelItem => project.Description)</li>
+                <li>@Html.DisplayFor(modelItem => project.Name)</li>
             </ul>
         </li>
     }
 </ol>
+
 
 @Html.ActionLink("Back home", "Index")
