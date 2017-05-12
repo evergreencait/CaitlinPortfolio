@@ -42,15 +42,12 @@ h3 {
   border-radius: 50%
 }
 
-.caitlin:hover + .about {
-    display: block;
-}
 
 .about {
   /*display: none;*/
   position: absolute;
   margin-top: -18%;
-  margin-left: 31%;
+  margin-left: 31.5%;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -62,7 +59,7 @@ h3 {
 .portfolio {
   /*display: none;*/
   position: absolute;
-  margin-top: -1.5%;
+  margin-top: -1%;
   margin-left: 53%;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
