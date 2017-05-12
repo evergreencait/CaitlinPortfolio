@@ -50,7 +50,7 @@ h3 {
   /*display: none;*/
   position: absolute;
   margin-top: -18%;
-  margin-left: 32%;
+  margin-left: 31%;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -62,8 +62,8 @@ h3 {
 .portfolio {
   /*display: none;*/
   position: absolute;
-  margin-top: 20%;
-  margin-left: 40%;
+  margin-top: -1.5%;
+  margin-left: 53%;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -72,7 +72,12 @@ h3 {
   border-radius: 50%
 }
 
-svg {
+#aboutline {
     margin-top: 20%;
+}
+
+#portline {
+    margin-left: 51%;
+    margin-top: -13%;
 }
 
