@@ -30,6 +30,7 @@ h3 {
 }
 
 .caitlin {
+  display: block;
   margin-top: 20%;
   margin-right: 60%;
   height: 300px;
@@ -40,10 +41,43 @@ h3 {
   border-radius: 50%
 }
 
-#about {
-    display: none;
+.caitlin:hover + .about {
+    display: block;
 }
 
-.caitlin:hover #about {
-    display:  block;
+.about {
+  display: none;
+  margin-top: -40%;
+  margin-right: 50%;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  float: right;
+  width: 150px;
+  border-radius: 50%
 }
+
+.portfolio {
+  display: none;
+  margin-top: 2%;
+  margin-right: 50%;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  float: right;
+  width: 150px;
+  border-radius: 50%
+}
+
+
+#a {
+  display: block;
+}
+
+#a:hover + #b {
+  display:block;
+}
+
+#b {
+  display:none;
+  }
