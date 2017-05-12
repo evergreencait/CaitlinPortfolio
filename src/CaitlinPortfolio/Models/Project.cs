@@ -21,7 +21,6 @@ namespace CaitlinPortfolio.Models
         {
             var client = new RestClient("https://api.github.com/users/evergreencait/starred");
             var request = new RestRequest("", Method.GET);
-            request.AddHeader("content type", "application/json");
             Console.WriteLine(request);
             var response = new RestResponse();
             Task.Run(async () =>

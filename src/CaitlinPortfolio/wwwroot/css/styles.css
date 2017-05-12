@@ -30,9 +30,10 @@ h3 {
 }
 
 .caitlin {
+  position: absolute;
   display: block;
-  margin-top: 20%;
-  margin-right: 60%;
+  margin-top: 18%;
+  margin-right: 50%;
   height: 300px;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -46,9 +47,10 @@ h3 {
 }
 
 .about {
-  display: none;
-  margin-top: -40%;
-  margin-right: 50%;
+  /*display: none;*/
+  position: absolute;
+  margin-top: -18%;
+  margin-left: 32%;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -58,9 +60,10 @@ h3 {
 }
 
 .portfolio {
-  display: none;
-  margin-top: 2%;
-  margin-right: 50%;
+  /*display: none;*/
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 40%;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -69,15 +72,7 @@ h3 {
   border-radius: 50%
 }
 
-
-#a {
-  display: block;
+svg {
+    margin-top: 20%;
 }
 
-#a:hover + #b {
-  display:block;
-}
-
-#b {
-  display:none;
-  }
