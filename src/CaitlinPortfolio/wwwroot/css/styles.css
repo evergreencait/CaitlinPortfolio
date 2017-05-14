@@ -63,12 +63,12 @@ h4 {
   border-radius: 50%
 }
 
-.about:hover {
+/*.about:hover {
     background-color: red;
 }
 .portfolio:hover{
     background-color: #E3E3E3;
-}
+}*/
 
 .portfolio {
   /*display: none;*/
@@ -99,5 +99,52 @@ h4 {
     margin-top: -13%;
     position:absolute;
 }*/
+
+.aboutcon {
+    height: 100vh;
+}
+
+.flex-item {
+    background-color: white;
+    padding-top: 1px;
+    width: 300px;
+    height: 370px;
+    margin: 20px;
+    margin-top: 180px;
+    text-align: center;
+    font-family: 'Gudea', sans-serif;
+    font-size: 22px;
+    overflow: hidden;
+
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  margin-right: 2%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item:hover {
+  height: 500px;
+  -webkit-box-shadow: 10px 6px 108px 37px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 6px 108px 37px rgba(0,0,0,0.75);
+  box-shadow: 10px 6px 108px 37px rgba(0,0,0,0.75);
+  -webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+
+.aboutbody {
+    background-image: url("https://static.pexels.com/photos/162616/coffee-work-desk-mug-keyboard-162616.jpeg");
+    background-size: cover;
+    margin-left: -12%;
+    margin-right: -12%;
+}
 
 
