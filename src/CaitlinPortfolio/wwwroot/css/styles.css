@@ -29,6 +29,12 @@ h3 {
   color: teal;
 }
 
+h4 {
+    margin-top: 40%;
+    font-size: 30px;
+    color: teal;
+}
+
 .caitlin {
   position: absolute;
   display: block;
@@ -45,9 +51,10 @@ h3 {
 
 .about {
   /*display: none;*/
+  font-family: 'Amatic SC', cursive;
   position: absolute;
-  margin-top: -18%;
-  margin-left: 31.5%;
+  margin-top: 18%;
+  margin-left: 33%;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -56,10 +63,18 @@ h3 {
   border-radius: 50%
 }
 
+.about:hover {
+    background-color: red;
+}
+.portfolio:hover{
+    background-color: #E3E3E3;
+}
+
 .portfolio {
   /*display: none;*/
+  font-family: 'Amatic SC', cursive;
   position: absolute;
-  margin-top: -1%;
+  margin-top: 30%;
   margin-left: 53%;
   height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -69,12 +84,20 @@ h3 {
   border-radius: 50%
 }
 
-#aboutline {
+#port:hover {
+    background-color: red;
+}
+
+
+/*#aboutline {
     margin-top: 20%;
+    position:absolute;
 }
 
 #portline {
     margin-left: 51%;
     margin-top: -13%;
-}
+    position:absolute;
+}*/
+
 
