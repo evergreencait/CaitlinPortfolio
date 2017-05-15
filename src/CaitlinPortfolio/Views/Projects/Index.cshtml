@@ -6,17 +6,11 @@
 @model IEnumerable<CaitlinPortfolio.Models.Project>
 
 <h2>Projects</h2>
-<hr />
-<ol>
-    @foreach (var project in Model)
-    {
-        <li>
-            <ul>
-                <li>@project.Name</li>
-            </ul>
-        </li>
-    }
-</ol>
+@foreach (var project in Model)
+{
+    <h2><a href=@project.Url>@Html.DisplayFor(m => project.Name)</a></h2>
+
+}
 
 
 @Html.ActionLink("Back home", "Index")

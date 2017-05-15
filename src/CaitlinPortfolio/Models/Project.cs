@@ -19,17 +19,18 @@ namespace CaitlinPortfolio.Models
 
         public static List<Project> GetProjects()
         {
-            var client = new RestClient("https://api.github.com/users/evergreencait/starred");
-            var request = new RestRequest("", Method.GET);
-            Console.WriteLine(request);
+            var client = new RestClient("https://api.github.com");
+            var request = new RestRequest("/users/evergreencait/starred", Method.GET);
+            request.AddHeader("Accept", "application / vnd.github.v3 + json");
+            request.AddHeader("User-Agent", "evergreencait");
             var response = new RestResponse();
             Task.Run(async () =>
             {
                 response = await GetResponseContentAsync(client, request) as RestResponse;
             }).Wait();
-            JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(response.Content);
+            var jsonResponse = JsonConvert.DeserializeObject<JArray>(response.Content);
             Console.WriteLine(jsonResponse);
-            string jsonOutput = jsonResponse["name"].ToString();
+            string jsonOutput = jsonResponse.ToString();
             var projectList = JsonConvert.DeserializeObject<List<Project>>(jsonOutput);
             Console.WriteLine(projectList[0].Name);
             return projectList;

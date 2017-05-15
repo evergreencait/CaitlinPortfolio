@@ -11,13 +11,9 @@ namespace CaitlinPortfolio.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult GetProjects()
-        {
             var allProjects = Project.GetProjects();
             return View(allProjects);
         }
+
     }
 }
