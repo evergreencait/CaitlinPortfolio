@@ -15,7 +15,7 @@ namespace CaitlinPortfolio.Models
         public int ProjectId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public string Url { get; set; }
+        public string html_url { get; set; }
 
         public static List<Project> GetProjects()
         {
