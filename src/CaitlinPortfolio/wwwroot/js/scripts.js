@@ -218,3 +218,5 @@ function renderCanvas() {
 
     requestAnimationFrame(renderCanvas);
 }
+
+window.onresize = function () { location.reload(); }
